@@ -19,7 +19,7 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <>
       <Layout header="Next.js" title="Top page.">
       <div className="alert alert-primary text-center">
         <h5 className="mb-4">{message}</h5>
@@ -40,6 +40,6 @@ export default function Home() {
         </table>
       </div>
       </Layout>
-    </div>
+    </>
   )
 }
