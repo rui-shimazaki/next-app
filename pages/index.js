@@ -38,7 +38,7 @@ export default function Home() {
 
               <div className={styles.q1} data-q_num="1">
                 <div className={styles.indicator}>
-                  <div className={styles.q_num, styles.active}>Q1</div>
+                  <div className={`${styles.q_num} ${styles.active}`}>Q1</div>
                   <div className={styles.q_num}>Q2</div>
                   <div className={styles.q_num}>Q3</div>
                   <div className={styles.q_num}>完了</div>
@@ -63,9 +63,7 @@ export default function Home() {
         <div className={styles.fotter_copy}>Copyright (C) 2019　弁護士法人・響 All Rights Reserved.</div>
       </footer>
 
-
         {/* ここまでsim響 */}
-
 
 
       {/* <div classNameName="alert alert-primary text-center">
