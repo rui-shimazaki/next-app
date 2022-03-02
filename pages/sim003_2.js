@@ -4,8 +4,7 @@ import Image from 'next/image'
 import styles from './../styles/Home.module.scss'
 
 export default function Home() {
-  const url = 'http://localhost/wordpress/wp-json/wp/v2/pages'
-  //https://saimu-omakase.stg.cuebic-sre.work/sim003_1/
+  const url = 'http://localhost/wordpress/wp-json/wp/v2/posts'
   const [data, setData] = useState({data:[]})
   const [message, setMessage] = useState('テスト出力')
 
@@ -19,14 +18,10 @@ export default function Home() {
     console.log(data);
   }
 
-  
-
   return (
     <>
       {/* <Layout header="Next.js" title="Top page."> */}
         {/* ここからsim響 */}
-
-        {test()}
 
         <header className={styles.header}>
           <img src="./images/ttl.png" className={styles.head_logo} />
@@ -39,27 +34,29 @@ export default function Home() {
           <div className={styles.inner_contents}>
 
             <form id="myform" action="/sim003_2/[para]" method="post" className={styles.simform_page}>
+              <input type="hidden" name="borrowing_amount" value="[post name=borrowing_amount]" />
               <div className={styles.lead_sub}>いただいた情報は無料診断・相談以外の用途には一切使用しません。</div>
 
               <div className={styles.q1} data-q_num="1">
                 <div className={styles.indicator}>
-                  <div className={`${styles.q_num} ${styles.active}`}>Q1</div>
-                  <div className={styles.q_num}>Q2</div>
+                  <div className={styles.q_num}>Q1</div>
+                  <div className={`${styles.q_num} ${styles.active}`}>Q2</div>
                   <div className={styles.q_num}>Q3</div>
                   <div className={styles.q_num}>完了</div>
                 </div>
 
-                <div className={styles.lead}>今ある借金の合計金額を教えてください</div>
-                <div className={styles.lead_sub}>※わからない場合はだいたいでかまいません</div>
+                <div className={styles.lead}>返済期間についてお聞かせください</div>
+                <div className={styles.lead_sub}>※覚えている範囲で大丈夫です</div>
 
                 <ul className={styles.Form__radioButtonList} data-test-el="radioButtonList">
-                  <li><label><input type="radio" name="borrowing_amount" value="0～49万円" required="" data-fo-validated="true" /><span>0～49万円</span></label></li>
-                  <li><label><input type="radio" name="borrowing_amount" value="50～99万円" required="" data-fo-validated="true" /><span>50～99万円</span></label></li>
-                  <li><label><input type="radio" name="borrowing_amount" value="100～199万円" required="" data-fo-validated="true" /><span>100～199万円</span></label></li>
-                  <li><label><input type="radio" name="borrowing_amount" value="200万円以上" required="" data-fo-validated="true" /><span>200万円以上</span></label></li>
+                  <li><label><input type="radio" name="borrowing_amount" value="0～3ヶ月未満" required="" data-fo-validated="true" /><span>0～3ヶ月未満</span></label></li>
+                  <li><label><input type="radio" name="borrowing_amount" value="3ヶ月～1年未満" required="" data-fo-validated="true" /><span>3ヶ月～1年未満</span></label></li>
+                  <li><label><input type="radio" name="borrowing_amount" value="1～6年未満" required="" data-fo-validated="true" /><span>1～6年未満</span></label></li>
+                  <li><label><input type="radio" name="borrowing_amount" value="6年以上" required="" data-fo-validated="true" /><span>6年以上</span></label></li>
                 </ul>
-              </div>
 
+                <div className={styles.btn_back}>戻る</div>
+              </div>
             </form>
           </div>
         </main>
@@ -70,27 +67,6 @@ export default function Home() {
       </footer>
 
         {/* ここまでsim響 */}
-
-
-      {/* <div classNameName="alert alert-primary text-center">
-        <h5 classNameName="mb-4">{message}</h5>
-        <table classNameName="table bg-white">
-          <thead classNameName="table-dark">
-            <tr><th>Name</th><th>Mail</th><th>Age</th></tr>
-          </thead>
-          <tbody>
-          {data.data ? console.log('読み込み中') :
-            data.map((value, key)=> (
-              <tr key={key}>
-                <th>{value.id}</th>
-                <td>{value.date}</td>
-                <td>{value.status}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div> */}
-      {/* </Layout> */}
     </>
   )
 }
