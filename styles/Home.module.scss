@@ -1,0 +1,311 @@
+.header {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.main_content {
+max-width: 640px;
+margin: 0 auto;
+padding: 0 0 60px;
+background: #D5EFF3;
+
+  ._container {
+    padding: 30px 30px 0;
+    text-align: center;
+    // position: relative;
+
+    .head_img {
+      // position: absolute;
+      top: 0;
+      margin: 10px auto 0;
+      // height: 163px;
+    }
+  }
+
+  .inner_contents {
+    background: #fff;
+    border-radius: 10px;
+    margin: 0 23px;
+    padding: 30px 40px 60px;
+
+    .simform_page {
+
+      .lead_sub {
+        font-size: 24px;
+        font-weight: 300;
+        color: #707070;
+      }
+
+      .q1 {
+        .indicator {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 30px;
+
+          .q_num {
+            font: normal normal normal 12px/20px Hiragino UD Sans Std;
+            border-radius: 18px;
+            font-size: 100%;
+            font-weight: 600;
+            padding: 10px;
+            color: #fff;
+            background: #EDEDED;
+          }
+
+          .active {
+            background-color: #192F59;
+            color: #fff;
+          }
+        }
+
+        .lead {
+          font-size: 30px;
+          font-weight: 700;
+          color: #192F59;
+        }
+
+        .lead_sub {
+          font-size: 24px;
+          font-weight: 300;
+          color: #707070;
+        }
+
+        ul {
+          padding-inline-start: 0;
+          li {
+            list-style: none;
+            label {
+              input[type="radio"] {
+                display: none;
+                //  input[type="checkbox"], input[type="radio"] {
+                //   width: 35px;
+                //   height: 35px;
+                //   margin: 0rem 0.2rem 0 0;
+                //   vertical-align: -0.3rem;
+                //   // box-sizing: border-box;
+                //   // padding: 0;
+              }
+              span {
+                cursor: pointer;
+                background: #FEDDDD;
+                border-radius: 50px;
+                padding: 15px;
+                text-align: center;
+                box-shadow: 0 6px #cb8e8f;
+                font-size: 26px;
+                font-weight: 700;
+                display: block;
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 35px;
+              }
+            }
+          }
+
+        }
+
+        .btn_back {
+          cursor: pointer;
+          width: 180px;
+          height: 60px;
+          margin: 60px 0 0;
+          border-radius: 50px;
+          line-height: 60px;
+          text-align: center;
+          text-indent: 65px;
+          font-weight: 700;
+          color: #fff;
+          // background: url(images/sim001/arrow_back.png) no-repeat 30px #68C6DC;
+          background-size: 55px;
+        }
+      }
+    }
+  }
+}
+
+.indicator .q_num:not(:first-child) {
+margin-left: 10px;
+}
+
+
+.footer {
+  padding: 20px 0;
+  background: #192F59;
+  text-align:center;
+  color: #fff;
+}
+.fotter_link_container {
+  text-align:center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+.fotter_copy {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn_back{
+  width: 180px;
+  height: 60px;
+  margin: 60px 0 0;
+  border-radius: 50px;
+  cursor: pointer;
+  line-height: 60px;
+  text-align: center;
+  text-indent: 65px;
+  font-weight: 700;
+  color: #fff;
+  // background: url("images/sim001/arrow_back.png") no-repeat 30px #68C6DC;
+  background-size: 55px;
+}
+.btn_back:hover{
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+
+
+// .container {
+//     padding: 0 2rem;
+// }
+  
+// .main {
+//   min-height: 100vh;
+//   padding: 4rem 0;
+//   flex: 1;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .footer {
+//   display: flex;
+//   flex: 1;
+//   padding: 2rem 0;
+//   border-top: 1px solid #eaeaea;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .footer a {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-grow: 1;
+// }
+
+// .title a {
+//   color: #0070f3;
+//   text-decoration: none;
+// }
+
+// .title a:hover,
+// .title a:focus,
+// .title a:active {
+//   text-decoration: underline;
+// }
+
+// .title {
+//   margin: 0;
+//   line-height: 1.15;
+//   font-size: 4rem;
+// }
+
+// .title,
+// .description {
+//   text-align: center;
+// }
+
+// .description {
+//   margin: 4rem 0;
+//   line-height: 1.5;
+//   font-size: 1.5rem;
+// }
+
+// .code {
+//   background: #fafafa;
+//   border-radius: 5px;
+//   padding: 0.75rem;
+//   font-size: 1.1rem;
+//   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+//     Bitstream Vera Sans Mono, Courier New, monospace;
+// }
+
+// .grid {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   max-width: 800px;
+// }
+
+// .card {
+//   margin: 1rem;
+//   padding: 1.5rem;
+//   text-align: left;
+//   color: inherit;
+//   text-decoration: none;
+//   border: 1px solid #eaeaea;
+//   border-radius: 10px;
+//   transition: color 0.15s ease, border-color 0.15s ease;
+//   max-width: 300px;
+// }
+
+// .card:hover,
+// .card:focus,
+// .card:active {
+//   color: #0070f3;
+//   border-color: #0070f3;
+// }
+
+// .card h2 {
+//   margin: 0 0 1rem 0;
+//   font-size: 1.5rem;
+// }
+
+// .card p {
+//   margin: 0;
+//   font-size: 1.25rem;
+//   line-height: 1.5;
+// }
+
+// .logo {
+//   height: 1em;
+//   margin-left: 0.5rem;
+// }
+
+// @media (max-width: 600px) {
+//   .grid {
+//     width: 100%;
+//     flex-direction: column;
+//   }
+// }
+
+
+/* ここから下が響用のCSS */
+
+/* 響PC CSSここから ******************************************************************************************************************************/
+
+
+
+
+
+
+/* 響PC CSSここまで ******************************************************************************************************************************/
+
+
+/* 響SP CSSここから ******************************************************************************************************************************/
+
+
+
+
+
+/* 響SP CSSここまで ******************************************************************************************************************************/
+
+
+
